@@ -14,7 +14,7 @@
     {
       "binding": "DB",
       "database_name": "rizipt_cloud_db",
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "database_id": "d41d8f7f-8145-4243-a98f-04157c443bb7",
       "migrations_dir": "../database/migrations"
     }
   ],
@@ -29,7 +29,7 @@
   "kv_namespaces": [
     {
       "binding": "SESSIONS",
-      "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+      "id": "7b8f4faa222140089e21b3866b86ffec"
     }
   ],
 
@@ -47,7 +47,7 @@
         {
           "binding": "DB",
           "database_name": "rizipt_cloud_db",
-          "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+          "database_id": "d41d8f7f-8145-4243-a98f-04157c443bb7",
           "migrations_dir": "../database/migrations"
         }
       ],
@@ -60,7 +60,7 @@
       "kv_namespaces": [
         {
           "binding": "SESSIONS",
-          "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+          "id": "7b8f4faa222140089e21b3866b86ffec"
         }
       ]
     }
