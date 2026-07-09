@@ -1,0 +1,68 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rizipt-cloud-api",
+  "main": "src/index.js",
+  "compatibility_date": "2025-01-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "vars": {
+    "APP_NAME": "Rizipt Cloud",
+    "ENVIRONMENT": "development"
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "rizipt_cloud_db",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "migrations_dir": "../database/migrations"
+    }
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "STORAGE",
+      "bucket_name": "rizipt-cloud-storage"
+    }
+  ],
+
+  "kv_namespaces": [
+    {
+      "binding": "SESSIONS",
+      "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+    }
+  ],
+
+  "observability": {
+    "enabled": true
+  },
+
+  "env": {
+    "production": {
+      "vars": {
+        "APP_NAME": "Rizipt Cloud",
+        "ENVIRONMENT": "production"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "rizipt_cloud_db",
+          "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+          "migrations_dir": "../database/migrations"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "STORAGE",
+          "bucket_name": "rizipt-cloud-storage"
+        }
+      ],
+      "kv_namespaces": [
+        {
+          "binding": "SESSIONS",
+          "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+        }
+      ]
+    }
+  }
+}
