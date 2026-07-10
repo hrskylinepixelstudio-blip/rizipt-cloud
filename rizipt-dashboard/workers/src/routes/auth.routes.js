@@ -6,21 +6,6 @@ import { ok, fail } from '../utils/response.js';
 
 const auth = new Hono();
 
-auth.get('/', (c) => {
-  return c.json({
-    success: true,
-    router: "auth",
-    message: "Auth router is mounted"
-  });
-});
-
-auth.get('/register', (c) => {
-  return c.json({
-    success: true,
-    message: "Register endpoint reached via GET"
-  });
-});
-
 auth.post('/register', async (c) => {
   const body = registerSchema.parse(await c.req.json());
   const result = await authService.registerCompanyAndAdmin(c.env.DB, c.env, body);

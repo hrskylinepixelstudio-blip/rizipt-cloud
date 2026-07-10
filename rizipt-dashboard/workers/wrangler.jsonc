@@ -2,20 +2,20 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "rizipt-cloud-api",
   "main": "src/index.js",
-  "compatibility_date": "2026-07-09",
+  "compatibility_date": "2025-01-01",
   "compatibility_flags": ["nodejs_compat"],
 
   "vars": {
     "APP_NAME": "Rizipt Cloud",
     "ENVIRONMENT": "development",
-    "R2_PUBLIC_BASE_URL": "https://pub-9cd887e0317b4ca094688d99a3498c64.r2.dev"
+    "R2_PUBLIC_BASE_URL": ""
   },
 
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "rizipt_cloud_db",
-      "database_id": "d41d8f7f-8145-4243-a98f-04157c443bb7",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
       "migrations_dir": "../database/migrations"
     }
   ],
@@ -30,7 +30,7 @@
   "kv_namespaces": [
     {
       "binding": "SESSIONS",
-      "id": "7b8f4faa222140089e21b3866b86ffec"
+      "id": "REPLACE_WITH_KV_NAMESPACE_ID"
     }
   ],
 
@@ -48,7 +48,7 @@
         {
           "binding": "DB",
           "database_name": "rizipt_cloud_db",
-          "database_id": "d41d8f7f-8145-4243-a98f-04157c443bb7",
+          "database_id": "REPLACE_WITH_D1_DATABASE_ID",
           "migrations_dir": "../database/migrations"
         }
       ],
@@ -61,7 +61,7 @@
       "kv_namespaces": [
         {
           "binding": "SESSIONS",
-          "id": "7b8f4faa222140089e21b3866b86ffec"
+          "id": "REPLACE_WITH_KV_NAMESPACE_ID"
         }
       ]
     }
