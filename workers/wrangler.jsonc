@@ -6,9 +6,9 @@
   "compatibility_flags": ["nodejs_compat"],
 
   "vars": {
-    "APP_NAME": "Rizipt Cloud",
-    "ENVIRONMENT": "development",
-    "R2_PUBLIC_BASE_URL": "https://pub-9cd887e0317b4ca094688d99a3498c64.r2.dev"
+  "APP_NAME": "Rizipt Cloud",
+  "ENVIRONMENT": "development",
+  "R2_PUBLIC_BASE_URL": "https://pub-9cd887e0317b4ca094688d99a3498c64.r2.dev"
   },
 
   "d1_databases": [
