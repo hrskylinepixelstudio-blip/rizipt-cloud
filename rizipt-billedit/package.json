@@ -1,0 +1,21 @@
+{
+  "name": "rizipt-cloud",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Rizipt Cloud - ERP + POS + GST Billing + CRM SaaS for Indian MSMEs",
+  "workspaces": [
+    "app",
+    "workers"
+  ],
+  "scripts": {
+    "dev:app": "npm run dev --workspace=app",
+    "dev:workers": "npm run dev --workspace=workers",
+    "build:app": "npm run build --workspace=app",
+    "deploy:workers": "npm run deploy --workspace=workers",
+    "db:migrate:local": "npm run db:migrate:local --workspace=workers",
+    "db:migrate:remote": "npm run db:migrate:remote --workspace=workers"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

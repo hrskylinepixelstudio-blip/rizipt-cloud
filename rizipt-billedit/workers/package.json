@@ -1,0 +1,23 @@
+{
+  "name": "rizipt-cloud-workers",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply rizipt_cloud_db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply rizipt_cloud_db --remote",
+    "db:create": "wrangler d1 create rizipt_cloud_db",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.6.14",
+    "jose": "^5.9.6",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0",
+    "typescript": "^5.7.2"
+  }
+}
